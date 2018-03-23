@@ -1,0 +1,106 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    font-family: Helvetica Neue, Helvetica, PingFang SC, Hiragino Sans GB, Microsoft YaHei, SimSun, sans-serif;
+    font-size: 14px;
+}
+
+.clear {
+    clear: both;
+}
+
+.container {
+    position: relative;
+    width: 450px;
+    margin: 20px auto;
+    cursor: pointer;
+    background: radial-gradient(circle, red 62%, black);
+    height: 450px;
+    border-radius: 225px;
+    box-shadow: 0 -3px 33px 0 rgba(0, 0, 0, 0.2), 0 6px 58px 0 rgba(0, 0, 0, 0.19);
+    border: 10px solid #eee;
+    ;
+}
+
+.count {
+    position: relative;
+    color: #fff;
+    font-size: 80px;
+    width: 140px;
+    top: 35px;
+    left: 160px;
+    text-align: center;
+}
+
+.hand {
+    position: absolute;
+    background: #fff;
+    border-radius: 50px;
+    opacity: 1;
+}
+
+.one {
+    width: 60px;
+    height: 60px;
+    transform: skew(120deg, 120deg);
+    top: 162px;
+    left: 170px;
+}
+
+.two {
+    width: 50px;
+    height: 50px;
+    transform: skew(120deg, 120deg);
+    border-radius: 40px;
+    background: #ff0000;
+    top: 152px;
+    left: 150px;
+}
+
+.three {
+    width: 180px;
+    height: 30px;
+    border-radius: 15px;
+    top: 220px;
+    left: 170px;
+}
+
+.four {
+    width: 160px;
+    height: 30px;
+    border-radius: 15px;
+    top: 250px;
+    left: 170px;
+}
+
+.five {
+    width: 140px;
+    height: 30px;
+    border-radius: 15px;
+    top: 280px;
+    left: 170px;
+}
+
+.six {
+    width: 120px;
+    height: 30px;
+    border-radius: 15px;
+    top: 310px;
+    left: 170px;
+}
+
+.seven {
+    width: 60px;
+    height: 120px;
+    border-radius: 15px;
+    top: 220px;
+    left: 140px;
+}
+
+.eight {
+    width: 46px;
+    height: 120px;
+    border-radius: 15px;
+    top: 220px;
+    left: 88px;
+}
