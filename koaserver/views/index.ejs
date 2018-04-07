@@ -2,12 +2,13 @@
 <html lang="en">
 
 <head>
-    <title>homework</title>
+    <title><%= title %></title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link href="style/style.css" rel="stylesheet">
+    <link href="/style/style.css" rel="stylesheet">
     <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
     <script src="https://cdn.bootcss.com/systemjs/0.21.0/system.js"></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
 </head>
 
 <body>
@@ -20,12 +21,12 @@
         <div class="hand six"></div>
         <div class="hand seven"></div>
         <div class="hand eight"></div>
-        <div class="count">0</div>
+        <div class="count"></div>
     </div>
 
 
     <script>
-        SystemJS.import('./lib/BigHand.js').then(function (m) {
+        SystemJS.import('/js/Bighand.js').then(function (m) {
             $.fn.BigHand = function () {
                 return new m.default(this);
             };
