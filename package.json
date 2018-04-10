@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "build": "babel src -d lib/js",
-    "start": "node ./koaserver/app.js"
+    "dev": "pm2 start ./koaserver/app.js --watch",
+    "start": "node ./koaserver/app.js",
+    "unit": "karma start && karma run"
   },
   "author": "fishy 506624553@qq.com",
   "devDependencies": {
@@ -15,9 +17,15 @@
   "dependencies": {
     "axios": "^0.18.0",
     "ejs": "^2.5.8",
+    "jasmine-core": "^3.1.0",
+    "karma": "^2.0.0",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-cli": "^1.0.1",
+    "karma-jasmine": "^1.1.1",
     "koa": "^2.0.0-alpha.8",
     "koa-router": "^7.1.1",
     "koa-static": "^4.0.2",
-    "koa-views": "^5.2.1"
+    "koa-views": "^5.2.1",
+    "selenium-webdriver": "^4.0.0-alpha.1"
   }
 }

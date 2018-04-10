@@ -1,4 +1,4 @@
-# homework-first-week
+# homework : first(done) second(80%)
 php+mysql的接口用phalcon写的，很简单，可以自行修改
 <br />
 npm install
