@@ -15,7 +15,9 @@ module.exports = function(config) {
 
     // list of files / patterns to load in the browser
     files: [
-      './test/unit/**.js'
+      require.resolve('babel-polyfill/dist/polyfill.js'),
+      './test/unit/*.js',
+      './src/*.js'
     ],
 
 
@@ -27,6 +29,8 @@ module.exports = function(config) {
     // preprocess matching files before serving them to the browser
     // available preprocessors: https://npmjs.org/browse/keyword/karma-preprocessor
     preprocessors: {
+      //'./test/unit/*.js': ['babel'],
+      './src/*.js': ['babel'],
     },
 
 
@@ -55,7 +59,7 @@ module.exports = function(config) {
 
     // start these browsers
     // available browser launchers: https://npmjs.org/browse/keyword/karma-launcher
-    browsers: ['Chrome'],
+    browsers: ['PhantomJS'],
 
 
     // Continuous Integration mode
